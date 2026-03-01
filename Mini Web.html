@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Mini Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#2e2e2e,#3a3a3a);
+    color:#fff;
+}
+
+/* Navigation */
+nav{
+    background:#1f1f1f;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 0 15px #aaa;
+}
+
+nav button{
+    background:none;
+    border:none;
+    color:#ccc;
+    margin:0 15px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+nav button:hover,
+nav button.active{
+    color:#fff;
+    text-shadow:0 0 10px #fff;
+}
+
+/* Sections */
+.tab-content{
+    display:none;
+    padding:40px;
+    margin:30px;
+    background:#3c3c3c;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(255,255,255,0.2);
+}
+
+.tab-content.active{
+    display:block;
+}
+
+.media-container{
+    text-align:center;
+    margin-top:20px;
+}
+
+img,audio,video{
+    width:100%;
+    max-width:600px;
+    border-radius:10px;
+    box-shadow:0 0 15px #bbb;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1f1f1f;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <button class="tab-btn active" onclick="openTab('home')">Home</button>
+    <button class="tab-btn" onclick="openTab('about')">About</button>
+    <button class="tab-btn" onclick="openTab('contact')">Contact</button>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="tab-content active">
+    <h2>Home - About Me</h2>
+    <p>Welcome to my mini website!</p>
+
+    <div class="media-container">
+        <img src="i.jpg" alt="My Photo" width="200/300">
+    </div>
+    <p>
+        I am someone who enjoys simple things that bring real happiness into my life. I love spending my time cycling, exploring new places, and feeling the freedom of the open road. Music is also a big part of who I am because it helps me relax, focus, and express my emotions. I believe that hobbies are important because they shape our personality and make us grow. Through cycling and listening to music, I’ve learned to appreciate quiet moments, stay positive, and enjoy life at my own pace.
+    </p>
+
+    <div class="media-container">
+        <audio  src="Hma.mp3" controls>
+        </audio>
+        <!-- Audio: Explanation -->
+            <div class="media-container">
+                <h3>Audio Explanation</h3></div>
+    </div>
+    <div class="media-container">
+        <video 
+             src="b2.mp4" type="video/mp4" controls>            
+        </video>
+          <!-- Video: The activity before -->
+            <div class="media-container">
+                <h3>Video: My Recent Activity</h3></div>
+    </div>
+    <a href="https://www.facebook.com" target="_blank">Visit Facebook</a><br><br>
+       
+</div>
+
+
+<!-- ABOUT -->
+<div id="about" class="tab-content">
+    <h2>About - My Hobby</h2>
+       <p>I enjoy cycling and listening to music because they help me feel free, happy, and motivated.</p>
+
+    <div class="media-container">
+        <img src="bki.jpeg" alt="Hobby">
+    </div>
+    <p>
+     Cycling is more than just a hobby for me; it is something I truly love because it makes me feel alive and free. Every time I ride my bike, I feel the wind on my face and forget about stress and worries. It gives me time to think, explore, and enjoy the moment. I also love listening to music while cycling because it makes the experience even more meaningful. The rhythm of the music and the movement of the ride make me feel calm, happy, and free, like I’m in my own world. Together, cycling and music help me express myself and enjoy life in a simple but powerful way.      
+    </p>
+
+    <div class="media-container">
+        <audio  src="Abs.mp3" controls>
+        </audio>
+  <!-- Audio: Explanation --> 
+  <div class="media-container">
+                <h3>Audio Explanation</h3></div>     
+    </div>
+
+    <div class="media-container">
+        <video
+       src="pider.mp4" controls>
+        </video>
+            <!-- Video: Sci-Fi Movie -->
+            <div class="media-container">
+                <h3>Video: Sci-Fi Movie Clip</h3>                
+            </div>
+
+            <!-- External Link -->
+            <div class="external-link">
+               
+                <p>Check out more Sci-Fi movies:</p>
+                
+                <a href="https://www.imdb.com/" target="_blank">Visit IMDB</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mini Website</p>
+    </footer>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="tab-content">
+    <h2>Contact - My Favorite Place</h2>
+    <p>This section shows my favorite place and contact info.</p>
+
+    <div class="media-container">
+        <img src="rod.jpeg" alt="Favorite Place">
+    </div>
+<p>
+   My favorite place is anywhere I can sit quietly beside the road or at the beach while watching the sunset. There’s something peaceful about seeing the sky change colors as the sun slowly disappears. It makes me think, reflect, and appreciate the beauty of life. I also enjoy riding my bicycle at midnight when everything feels calm and silent. The cool air, the empty roads, and the quiet surroundings give me a deep sense of freedom. In those simple moments—watching the sunset or riding at night—I truly feel relaxed, free, and at peace with myself.
+</p>
+    <div class="media-container">
+        <audio  src="Tc.mp3" controls>
+       
+        </audio>                
+    </div>
+
+    <div class="media-container">
+        <video              src="lex.mp4" controls>
+        </video>
+    </div>
+
+    <div class="media-container">
+        <p>Email: rtgarcia33@email.com</p>
+    </div>
+    <a href="https://www.google.com" target="_blank">Visit Google</a><br><br>
+    
+</div>
+
+<footer>
+    <p>© 2026 My Mini Website</p>
+</footer>
+
+<script>
+function openTab(tabName) {
+    var i;
+    var contents = document.getElementsByClassName("tab-content");
+    var buttons = document.getElementsByClassName("tab-btn");
+
+    for (i = 0; i < contents.length; i++) {
+        contents[i].classList.remove("active");
+    }
+
+    for (i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+    }
+
+    document.getElementById(tabName).classList.add("active");
+    event.currentTarget.classList.add("active");
+}
+</script>
+
+</body>
+</html>                        
